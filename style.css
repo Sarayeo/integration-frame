@@ -74,7 +74,7 @@ section .frame .button {
   border: none;
   background-color: #9208C3;
   color: white;
-  margin-top: 40px;
+  margin-top: 45px;
   margin-left: 130px;
   box-shadow: 1px 3px 4px 1px rgba(23, 22, 22, 0.16);
 }
@@ -82,18 +82,6 @@ section .frame .dropdown.active .options {
   display: none;
 }
 section .frame .dropdown.active i {
-  transform: rotate(180deg);
-}
-section .frame .dropdown1.active .options1 {
-  display: none;
-}
-section .frame .dropdown1.active i {
-  transform: rotate(180deg);
-}
-section .frame .dropdown2.active .options2 {
-  display: none;
-}
-section .frame .dropdown2.active i {
   transform: rotate(180deg);
 }
 section .frame .dropdowns {
@@ -129,6 +117,11 @@ section .frame .dropdowns .item-s .drop {
   flex-direction: row;
   gap: 10px;
 }
+section .frame .dropdowns .item-s .drop p {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
 section .frame .dropdowns .item-s .drop .dropdown3 {
   width: 100px;
   justify-content: center;
@@ -144,7 +137,7 @@ section .frame .dropdowns .item-s .drop .dropdown3 .dropdown-btn {
   color: #9A9A9A;
   margin-top: -17px;
   margin-bottom: 5px;
-  height: 35px;
+  height: 30px;
   align-items: center;
   cursor: pointer;
   justify-content: space-between;
@@ -155,12 +148,12 @@ section .frame .dropdowns .item-s .drop .dropdown3 .dropdown-btn i {
   transition: 0.3s;
 }
 section .frame .dropdowns .item-s .drop .dropdown3 .options {
+  display: none;
   position: absolute;
   padding: 2px;
   margin-top: 5px;
   background: white;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  display: none;
 }
 section .frame .dropdowns .item-s .drop .dropdown3 .options .option {
   height: 55px;
@@ -175,6 +168,9 @@ section .frame .dropdowns .item-s .drop .dropdown3 .options .option:hover {
 section .frame .dropdowns .item-s .drop .dropdown3 .options .option-text {
   font-size: 18px;
   color: #9208C3;
+}
+section .frame .dropdowns .item-s .drop .dropdown3:hover .options {
+  display: block;
 }
 section .frame .dropdowns .item-s .drop .dropdown4 {
   width: 100px;
@@ -221,6 +217,9 @@ section .frame .dropdowns .item-s .drop .dropdown4 .options .option-text {
   font-size: 18px;
   color: #9208C3;
 }
+section .frame .dropdowns .item-s .drop .dropdown4:hover .options {
+  display: block;
+}
 section .frame .dropdowns .item-a {
   display: flex;
   flex-direction: row;
@@ -249,10 +248,16 @@ section .frame .dropdowns .item-a .drop {
   flex-direction: row;
   gap: 10px;
 }
+section .frame .dropdowns .item-a .drop p {
+  margin-top: 0%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
 section .frame .dropdowns .item-a .drop .dropdown5 {
   width: 100px;
   justify-content: center;
   align-items: center;
+  margin-top: -10px;
 }
 section .frame .dropdowns .item-a .drop .dropdown5 .dropdown-btn {
   display: flex;
@@ -260,10 +265,8 @@ section .frame .dropdowns .item-a .drop .dropdown5 .dropdown-btn {
   padding-left: 3px;
   font-size: 18px;
   font-weight: 300;
-  width: 90px;
+  width: 78px;
   color: #9A9A9A;
-  margin-top: -10px;
-  margin-left: -7px;
   height: 35px;
   align-items: center;
   cursor: pointer;
@@ -296,50 +299,8 @@ section .frame .dropdowns .item-a .drop .dropdown5 .options .option-text {
   font-size: 18px;
   color: #9208C3;
 }
-section .frame .dropdowns .item-a .drop .dropdown4 {
-  width: 100px;
-  justify-content: center;
-  align-items: center;
-}
-section .frame .dropdowns .item-a .drop .dropdown4 .dropdown-btn {
-  display: flex;
-  background-color: white;
-  padding-left: 3px;
-  font-size: 18px;
-  font-weight: 300;
-  width: 78px;
-  color: #9A9A9A;
-  height: 35px;
-  align-items: center;
-  cursor: pointer;
-  justify-content: space-between;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-section .frame .dropdowns .item-a .drop .dropdown4 .dropdown-btn i {
-  font-size: 25px;
-  transition: 0.3s;
-}
-section .frame .dropdowns .item-a .drop .dropdown4 .options {
-  position: absolute;
-  padding: 2px;
-  margin-top: 5px;
-  background: white;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  display: none;
-}
-section .frame .dropdowns .item-a .drop .dropdown4 .options .option {
-  height: 55px;
-  cursor: pointer;
-  padding: 0 3px;
-  align-items: center;
-  background: white;
-}
-section .frame .dropdowns .item-a .drop .dropdown4 .options .option:hover {
-  background: #70D1C1;
-}
-section .frame .dropdowns .item-a .drop .dropdown4 .options .option-text {
-  font-size: 18px;
-  color: #9208C3;
+section .frame .dropdowns .item-a .drop .dropdown5:hover .options {
+  display: block;
 }
 section .frame .dropdowns .item {
   display: flex;
@@ -368,6 +329,11 @@ section .frame .dropdowns .item .drop {
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+section .frame .dropdowns .item .drop p {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 section .frame .dropdowns .item .drop .dropdown {
   width: 100px;
@@ -438,11 +404,13 @@ section .frame .dropdowns .item .drop .dropdown1 .dropdown-btn1 i {
   transition: 0.3s;
 }
 section .frame .dropdowns .item .drop .dropdown1 .options1 {
+  display: none;
   position: absolute;
   padding: 2px;
   margin-top: 5px;
   background: white;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }
 section .frame .dropdowns .item .drop .dropdown1 .options1 .option1 {
   height: 55px;
@@ -457,6 +425,9 @@ section .frame .dropdowns .item .drop .dropdown1 .options1 .option1:hover {
 section .frame .dropdowns .item .drop .dropdown1 .options1 .option-text {
   font-size: 18px;
   color: #9208C3;
+}
+section .frame .dropdowns .item .drop .dropdown1:hover .options1 {
+  display: block;
 }
 section .frame .dropdowns .item .drop .dropdown2 {
   width: 100px;
@@ -481,7 +452,8 @@ section .frame .dropdowns .item .drop .dropdown2 .dropdown-btn i {
   font-size: 25px;
   transition: 0.3s;
 }
-section .frame .dropdowns .item .drop .dropdown2 .options {
+section .frame .dropdowns .item .drop .dropdown2 .options2 {
+  display: none;
   position: absolute;
   padding: 2px;
   margin-top: 5px;
@@ -489,154 +461,20 @@ section .frame .dropdowns .item .drop .dropdown2 .options {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
   display: none;
 }
-section .frame .dropdowns .item .drop .dropdown2 .options .option {
+section .frame .dropdowns .item .drop .dropdown2 .options2 .option2 {
   height: 55px;
   cursor: pointer;
   padding: 0 3px;
   align-items: center;
   background: white;
 }
-section .frame .dropdowns .item .drop .dropdown2 .options .option:hover {
+section .frame .dropdowns .item .drop .dropdown2 .options2 .option2:hover {
   background: #70D1C1;
 }
-section .frame .dropdowns .item .drop .dropdown2 .options .option-text {
+section .frame .dropdowns .item .drop .dropdown2 .options2 .option-text {
   font-size: 18px;
   color: #9208C3;
 }
-section .frame .dropdowns .item .drop .dropdown3 {
-  width: 100px;
-  justify-content: center;
-  align-items: center;
-}
-section .frame .dropdowns .item .drop .dropdown3 .dropdown-btn {
-  display: flex;
-  background-color: white;
-  padding-left: 3px;
-  font-size: 18px;
-  font-weight: 300;
-  width: 78px;
-  color: #9A9A9A;
-  margin-top: -17px;
-  margin-bottom: 5px;
-  height: 30px;
-  align-items: center;
-  cursor: pointer;
-  justify-content: space-between;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-section .frame .dropdowns .item .drop .dropdown3 .dropdown-btn i {
-  font-size: 25px;
-  transition: 0.3s;
-}
-section .frame .dropdowns .item .drop .dropdown3 .options {
-  position: absolute;
-  padding: 2px;
-  margin-top: 5px;
-  background: white;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  display: none;
-}
-section .frame .dropdowns .item .drop .dropdown3 .options .option {
-  height: 55px;
-  cursor: pointer;
-  padding: 0 3px;
-  align-items: center;
-  background: white;
-}
-section .frame .dropdowns .item .drop .dropdown3 .options .option:hover {
-  background: #70D1C1;
-}
-section .frame .dropdowns .item .drop .dropdown3 .options .option-text {
-  font-size: 18px;
-  color: #9208C3;
-}
-section .frame .dropdowns .item .drop .dropdown4 {
-  width: 100px;
-  justify-content: center;
-  align-items: center;
-}
-section .frame .dropdowns .item .drop .dropdown4 .dropdown-btn {
-  display: flex;
-  background-color: white;
-  padding-left: 3px;
-  font-size: 18px;
-  font-weight: 300;
-  width: 78px;
-  color: #9A9A9A;
-  height: 35px;
-  align-items: center;
-  cursor: pointer;
-  justify-content: space-between;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-section .frame .dropdowns .item .drop .dropdown4 .dropdown-btn i {
-  font-size: 25px;
-  transition: 0.3s;
-}
-section .frame .dropdowns .item .drop .dropdown4 .options {
-  position: absolute;
-  padding: 2px;
-  margin-top: 5px;
-  background: white;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  display: none;
-}
-section .frame .dropdowns .item .drop .dropdown4 .options .option {
-  height: 55px;
-  cursor: pointer;
-  padding: 0 3px;
-  align-items: center;
-  background: white;
-}
-section .frame .dropdowns .item .drop .dropdown4 .options .option:hover {
-  background: #70D1C1;
-}
-section .frame .dropdowns .item .drop .dropdown4 .options .option-text {
-  font-size: 18px;
-  color: #9208C3;
-}
-section .frame .dropdowns .item .drop .dropdown5 {
-  width: 100px;
-  justify-content: center;
-  align-items: center;
-}
-section .frame .dropdowns .item .drop .dropdown5 .dropdown-btn {
-  display: flex;
-  background-color: white;
-  padding-left: 3px;
-  font-size: 18px;
-  font-weight: 300;
-  width: 78px;
-  color: #9A9A9A;
-  height: 35px;
-  align-items: center;
-  cursor: pointer;
-  justify-content: space-between;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-section .frame .dropdowns .item .drop .dropdown5 .dropdown-btn i {
-  font-size: 25px;
-  transition: 0.3s;
-}
-section .frame .dropdowns .item .drop .dropdown5 .options {
-  position: absolute;
-  padding: 2px;
-  margin-top: 5px;
-  background: white;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  display: none;
-}
-section .frame .dropdowns .item .drop .dropdown5 .options .option {
-  height: 55px;
-  cursor: pointer;
-  padding: 0 3px;
-  align-items: center;
-  background: white;
-}
-section .frame .dropdowns .item .drop .dropdown5 .options .option:hover {
-  background: #70D1C1;
-}
-section .frame .dropdowns .item .drop .dropdown5 .options .option-text {
-  font-size: 18px;
-  color: #9208C3;
+section .frame .dropdowns .item .drop .dropdown2:hover .options2 {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
