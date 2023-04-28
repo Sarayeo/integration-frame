@@ -1,0 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  justify-content: center;
+  justify-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+section .frame {
+  width: 390px;
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+}
+section .frame .barre-verte {
+  margin-top: 30px;
+  background-color: #B3D2CC;
+  padding-left: 2%;
+  width: 100%;
+  height: 58px;
+}
+section .frame .barre-verte .barre-slide-shadow {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 80%;
+  height: 36px;
+  border-radius: 20px;
+  margin-top: 3%;
+  background-color: #fff;
+  gap: 11%;
+  box-shadow: 2px 3px 5px 1px #70D1C1;
+}
+section .frame .barre-verte .barre-slide-shadow .on {
+  color: white;
+  background-color: #9208C3;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Tw Cen MT", Serif;
+}
+section .frame .barre-verte .barre-slide-shadow button {
+  color: black;
+  font-weight: bolder;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: white;
+}
+section .frame .info p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9A9A9A;
+  margin-top: 3px;
+  height: 52px;
+  font-weight: 500;
+}
+section .frame .button {
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #9208C3;
+  color: white;
+  margin-top: 40px;
+  margin-left: 130px;
+  box-shadow: 1px 3px 4px 1px rgba(23, 22, 22, 0.16);
+}
+section .frame .dropdown.active {
+  display: block;
+}
+section .frame .dropdown.active i {
+  transform: rotate(180deg);
+}
+section .frame .dropdown1.active .options1 {
+  display: block;
+}
+section .frame .dropdown1.active i {
+  transform: rotate(180deg);
+}
+section .frame .dropdown2.active .options2 {
+  display: none;
+}
+section .frame .dropdown2.active i {
+  transform: rotate(180deg);
+}
+section .frame .dropdowns {
+  display: flex;
+  flex-direction: column;
+}
+section .frame .dropdowns .item-s {
+  display: flex;
+  flex-direction: row;
+  background-color: #E4C0F0;
+  margin-bottom: 10px;
+  margin-left: 1%;
+  font-family: "Montserrat", sans-serif;
+  padding: 22px;
+  width: 98%;
+  height: 85px;
+  justify-content: space-between;
+  justify-items: center;
+  border-radius: 8px;
+  box-shadow: 1px 3px 4px 1px rgba(23, 22, 22, 0.16);
+}
+section .frame .dropdowns .item-s h2 {
+  justify-content: center;
+  align-items: center;
+  color: #282828;
+  margin-top: 3px;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+section .frame .dropdowns .item-s .drop {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+section .frame .dropdowns .item-s .drop .dropdown3 {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+section .frame .dropdowns .item-s .drop .dropdown3 .dropdown-btn {
+  display: flex;
+  background-color: white;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 78px;
+  color: #9A9A9A;
+  margin-top: -17px;
+  margin-bottom: 5px;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item-s .drop .dropdown3 .dropdown-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+section .frame .dropdowns .item-s .drop .dropdown3 .options {
+  position: absolute;
+  padding: 2px;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+section .frame .dropdowns .item-s .drop .dropdown3 .options .option {
+  height: 55px;
+  cursor: pointer;
+  padding: 0 3px;
+  align-items: center;
+  background: white;
+}
+section .frame .dropdowns .item-s .drop .dropdown3 .options .option:hover {
+  background: #70D1C1;
+}
+section .frame .dropdowns .item-s .drop .dropdown3 .options .option-text {
+  font-size: 18px;
+  color: #9208C3;
+}
+section .frame .dropdowns .item-s .drop .dropdown4 {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+section .frame .dropdowns .item-s .drop .dropdown4 .dropdown-btn {
+  display: flex;
+  background-color: white;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 78px;
+  color: #9A9A9A;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item-s .drop .dropdown4 .dropdown-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+section .frame .dropdowns .item-s .drop .dropdown4 .options {
+  position: absolute;
+  padding: 2px;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+section .frame .dropdowns .item-s .drop .dropdown4 .options .option {
+  height: 55px;
+  cursor: pointer;
+  padding: 0 3px;
+  align-items: center;
+  background: white;
+}
+section .frame .dropdowns .item-s .drop .dropdown4 .options .option:hover {
+  background: #70D1C1;
+}
+section .frame .dropdowns .item-s .drop .dropdown4 .options .option-text {
+  font-size: 18px;
+  color: #9208C3;
+}
+section .frame .dropdowns .item-a {
+  display: flex;
+  flex-direction: row;
+  background-color: #E4C0F0;
+  margin-bottom: 10px;
+  margin-left: 1%;
+  font-family: "Montserrat", sans-serif;
+  padding: 22px;
+  width: 98%;
+  height: 78px;
+  justify-content: space-between;
+  justify-items: center;
+  border-radius: 8px;
+  box-shadow: 1px 3px 4px 1px rgba(23, 22, 22, 0.16);
+}
+section .frame .dropdowns .item-a h2 {
+  justify-content: center;
+  align-items: center;
+  color: #282828;
+  margin-top: 3px;
+  font-size: 22px;
+  font-weight: 600;
+}
+section .frame .dropdowns .item-a .drop {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+section .frame .dropdowns .item-a .drop .dropdown5 {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+section .frame .dropdowns .item-a .drop .dropdown5 .dropdown-btn {
+  display: flex;
+  background-color: white;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 90px;
+  color: #9A9A9A;
+  margin-top: -10px;
+  margin-left: -7px;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item-a .drop .dropdown5 .dropdown-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+section .frame .dropdowns .item-a .drop .dropdown5 .options {
+  position: absolute;
+  padding: 2px;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+section .frame .dropdowns .item-a .drop .dropdown5 .options .option {
+  height: 55px;
+  cursor: pointer;
+  padding: 0 3px;
+  align-items: center;
+  background: white;
+}
+section .frame .dropdowns .item-a .drop .dropdown5 .options .option:hover {
+  background: #70D1C1;
+}
+section .frame .dropdowns .item-a .drop .dropdown5 .options .option-text {
+  font-size: 18px;
+  color: #9208C3;
+}
+section .frame .dropdowns .item-a .drop .dropdown4 {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+section .frame .dropdowns .item-a .drop .dropdown4 .dropdown-btn {
+  display: flex;
+  background-color: white;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 78px;
+  color: #9A9A9A;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item-a .drop .dropdown4 .dropdown-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+section .frame .dropdowns .item-a .drop .dropdown4 .options {
+  position: absolute;
+  padding: 2px;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+section .frame .dropdowns .item-a .drop .dropdown4 .options .option {
+  height: 55px;
+  cursor: pointer;
+  padding: 0 3px;
+  align-items: center;
+  background: white;
+}
+section .frame .dropdowns .item-a .drop .dropdown4 .options .option:hover {
+  background: #70D1C1;
+}
+section .frame .dropdowns .item-a .drop .dropdown4 .options .option-text {
+  font-size: 18px;
+  color: #9208C3;
+}
+section .frame .dropdowns .item {
+  display: flex;
+  flex-direction: row;
+  background-color: #E4C0F0;
+  margin-bottom: 10px;
+  margin-left: 1%;
+  font-family: "Montserrat", sans-serif;
+  padding: 22px;
+  width: 98%;
+  height: 78px;
+  justify-content: space-between;
+  justify-items: center;
+  border-radius: 8px;
+  box-shadow: 1px 3px 4px 1px rgba(23, 22, 22, 0.16);
+}
+section .frame .dropdowns .item h2 {
+  justify-content: center;
+  align-items: center;
+  color: #282828;
+  margin-top: 3px;
+  font-size: 22px;
+  font-weight: 600;
+}
+section .frame .dropdowns .item .drop {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+section .frame .dropdowns .item .drop .dropdown {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+section .frame .dropdowns .item .drop .dropdown .dropdown-btn {
+  display: flex;
+  background-color: white;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 78px;
+  color: #9A9A9A;
+  height: 35px;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item .drop .dropdown .dropdown-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+section .frame .dropdowns .item .drop .dropdown .options {
+  position: absolute;
+  padding: 2px;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+section .frame .dropdowns .item .drop .dropdown .options .option {
+  height: 55px;
+  cursor: pointer;
+  padding: 0 3px;
+  align-items: center;
+  background: white;
+}
+section .frame .dropdowns .item .drop .dropdown .options .option:hover {
+  background: #70D1C1;
+}
+section .frame .dropdowns .item .drop .dropdown .options .option-text {
+  font-size: 18px;
+  color: #9208C3;
+}
+section .frame .dropdowns .item .drop .dropdown1 {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+section .frame .dropdowns .item .drop .dropdown1 .dropdown-btn1 {
+  display: flex;
+  background-color: white;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 78px;
+  color: #9A9A9A;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item .drop .dropdown1 .dropdown-btn1 i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+section .frame .dropdowns .item .drop .dropdown1 .options1 {
+  position: absolute;
+  padding: 2px;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item .drop .dropdown1 .options1 .option1 {
+  height: 55px;
+  cursor: pointer;
+  padding: 0 3px;
+  align-items: center;
+  background: white;
+}
+section .frame .dropdowns .item .drop .dropdown1 .options1 .option1:hover {
+  background: #70D1C1;
+}
+section .frame .dropdowns .item .drop .dropdown1 .options1 .option-text {
+  font-size: 18px;
+  color: #9208C3;
+}
+section .frame .dropdowns .item .drop .dropdown2 {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+section .frame .dropdowns .item .drop .dropdown2 .dropdown-btn {
+  display: flex;
+  background-color: white;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 78px;
+  color: #9A9A9A;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item .drop .dropdown2 .dropdown-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+section .frame .dropdowns .item .drop .dropdown2 .options {
+  position: absolute;
+  padding: 2px;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+section .frame .dropdowns .item .drop .dropdown2 .options .option {
+  height: 55px;
+  cursor: pointer;
+  padding: 0 3px;
+  align-items: center;
+  background: white;
+}
+section .frame .dropdowns .item .drop .dropdown2 .options .option:hover {
+  background: #70D1C1;
+}
+section .frame .dropdowns .item .drop .dropdown2 .options .option-text {
+  font-size: 18px;
+  color: #9208C3;
+}
+section .frame .dropdowns .item .drop .dropdown3 {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+section .frame .dropdowns .item .drop .dropdown3 .dropdown-btn {
+  display: flex;
+  background-color: white;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 78px;
+  color: #9A9A9A;
+  margin-top: -17px;
+  margin-bottom: 5px;
+  height: 30px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item .drop .dropdown3 .dropdown-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+section .frame .dropdowns .item .drop .dropdown3 .options {
+  position: absolute;
+  padding: 2px;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+section .frame .dropdowns .item .drop .dropdown3 .options .option {
+  height: 55px;
+  cursor: pointer;
+  padding: 0 3px;
+  align-items: center;
+  background: white;
+}
+section .frame .dropdowns .item .drop .dropdown3 .options .option:hover {
+  background: #70D1C1;
+}
+section .frame .dropdowns .item .drop .dropdown3 .options .option-text {
+  font-size: 18px;
+  color: #9208C3;
+}
+section .frame .dropdowns .item .drop .dropdown4 {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+section .frame .dropdowns .item .drop .dropdown4 .dropdown-btn {
+  display: flex;
+  background-color: white;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 78px;
+  color: #9A9A9A;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item .drop .dropdown4 .dropdown-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+section .frame .dropdowns .item .drop .dropdown4 .options {
+  position: absolute;
+  padding: 2px;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+section .frame .dropdowns .item .drop .dropdown4 .options .option {
+  height: 55px;
+  cursor: pointer;
+  padding: 0 3px;
+  align-items: center;
+  background: white;
+}
+section .frame .dropdowns .item .drop .dropdown4 .options .option:hover {
+  background: #70D1C1;
+}
+section .frame .dropdowns .item .drop .dropdown4 .options .option-text {
+  font-size: 18px;
+  color: #9208C3;
+}
+section .frame .dropdowns .item .drop .dropdown5 {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+section .frame .dropdowns .item .drop .dropdown5 .dropdown-btn {
+  display: flex;
+  background-color: white;
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 78px;
+  color: #9A9A9A;
+  height: 35px;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+section .frame .dropdowns .item .drop .dropdown5 .dropdown-btn i {
+  font-size: 25px;
+  transition: 0.3s;
+}
+section .frame .dropdowns .item .drop .dropdown5 .options {
+  position: absolute;
+  padding: 2px;
+  margin-top: 5px;
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+section .frame .dropdowns .item .drop .dropdown5 .options .option {
+  height: 55px;
+  cursor: pointer;
+  padding: 0 3px;
+  align-items: center;
+  background: white;
+}
+section .frame .dropdowns .item .drop .dropdown5 .options .option:hover {
+  background: #70D1C1;
+}
+section .frame .dropdowns .item .drop .dropdown5 .options .option-text {
+  font-size: 18px;
+  color: #9208C3;
+}/*# sourceMappingURL=style.css.map */
