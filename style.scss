@@ -81,14 +81,14 @@ section{
       margin-left: 130px;
       box-shadow: 1px 3px 4px 1px rgba(23, 22, 22, 0.16);
     }
-    .dropdown.active {
-      display: block;
+    .dropdown.active .options{
+      display: none;
     }
     .dropdown.active i{
       transform: rotate(180deg);
     }
     .dropdown1.active .options1{
-      display: block;
+      display: none;
     }
     .dropdown1.active i{
       transform: rotate(180deg);
@@ -99,7 +99,6 @@ section{
     .dropdown2.active i{
       transform: rotate(180deg);
     }
-
     .dropdowns{
       display: flex;
       flex-direction: column;
@@ -404,7 +403,6 @@ section{
               margin-top: 5px;
               background: white;
               box-shadow: 0 0 3px rgba(0,0,0,0.1);
-              display: none;
               .option{
                 height: 55px;
                 cursor:pointer;

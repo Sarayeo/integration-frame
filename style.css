@@ -78,14 +78,14 @@ section .frame .button {
   margin-left: 130px;
   box-shadow: 1px 3px 4px 1px rgba(23, 22, 22, 0.16);
 }
-section .frame .dropdown.active {
-  display: block;
+section .frame .dropdown.active .options {
+  display: none;
 }
 section .frame .dropdown.active i {
   transform: rotate(180deg);
 }
 section .frame .dropdown1.active .options1 {
-  display: block;
+  display: none;
 }
 section .frame .dropdown1.active i {
   transform: rotate(180deg);
@@ -399,7 +399,6 @@ section .frame .dropdowns .item .drop .dropdown .options {
   margin-top: 5px;
   background: white;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  display: none;
 }
 section .frame .dropdowns .item .drop .dropdown .options .option {
   height: 55px;
